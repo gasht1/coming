@@ -15,7 +15,8 @@ const App = () => {
     <div className="App">
       <Hello name="gashaw" lastname="hello" age={24} />
       <Hello name="dave" age={20} />
-      <Hello />
+      <Hello  name="sebli"
+              age={19} />
       <Hello />
     </div>
   );
