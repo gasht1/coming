@@ -1,25 +1,24 @@
 import "./App.css";
-
-const Hello = (props) => {
-  return (
-    <div className="">
-      <h1>{props.name}</h1>
-      <h3>{props.lastname}</h3>
-      <h2> {props.age}</h2>
-    </div>
-  );
-};
+import {useState} from 'react';
 
 const App = () => {
+const [count, setcount] =useState(0);
   return (
     <div className="App">
-      <Hello name="gashaw" lastname="hello" age={24} />
-      <Hello name="dave" age={20} />
-      <Hello  name="sebli"
-              age={19} />
-      <Hello />
+      <button onClick={() => setcount((prevcont) =>prevcont-1)} >-</button>
+      <h1>{count}</h1>
+      <button onClick={() => setcount((prevcont) =>prevcont+1)}>+</button>
+
+
+
+
+     
     </div>
   );
 };
 
 export default App;
+
+
+
+
